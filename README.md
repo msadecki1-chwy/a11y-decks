@@ -4,11 +4,11 @@ A collection of slide decks for Accessibility related talks at Chewy:
 
 ## Chewy Web Conference May 2024
 
-* [Intro to WAI-ARIA](https://rawcdn.githack.com/msadecki1-chewy/a11y-decks/main/IntroARIA.html)
-* [Live Regions and Off-Screen Text](https://rawcdn.githack.com/msadecki1-chewy/a11y-decks/main/liveregions.html)
-* [Manual Accessibility Testing](https://rawcdn.githack.com/msadecki1-chewy/a11y-decks/main/manualtesting.html)
-* [Intro to Screen Reader Testing (Mac Edition)](https://rawcdn.githack.com/msadecki1-chewy/a11y-decks/main/srtestingmac.html)
-* [Intro to Screen Reader Testing (Windows Edition)](https://rawcdn.githack.com/msadecki1-chewy/a11y-decks/main/srtestingwin.html)
+* [Intro to WAI-ARIA](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/IntroARIA.html)
+* [Live Regions and Off-Screen Text](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/liveregions.html)
+* [Manual Accessibility Testing](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/manualtesting.html)
+* [Intro to Screen Reader Testing (Mac Edition)](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/srtestingmac.html)
+* [Intro to Screen Reader Testing (Windows Edition)](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/srtestingwin.html)
 
 ## Useful links referenced in these slide decks
 
