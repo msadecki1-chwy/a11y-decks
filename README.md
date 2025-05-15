@@ -4,6 +4,7 @@ A collection of slide decks for Accessibility related talks at Chewy:
 
 ## Chewy Web Conference May 2024
 
+* [Intro to Accessibility](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/IntroA11y.html)
 * [Intro to WAI-ARIA](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/IntroARIA.html)
 * [Live Regions and Off-Screen Text](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/liveregions.html)
 * [Manual Accessibility Testing](https://rawcdn.githack.com/msadecki1-chwy/a11y-decks/main/manualtesting.html)
