@@ -25,9 +25,9 @@ keywords: Accessibility, Chewy, Chewy Web Conference, Talk, WAI, ARIA, Live Regi
 
 # Live Regions and Off Screen Text
 
-Chewy Web Conference Lighting Talk
+Global Accessibility Awareness Day
 
-May 13th, 2024
+May 15th, 2025
 
 ---
 

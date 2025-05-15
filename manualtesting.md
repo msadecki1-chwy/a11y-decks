@@ -12,11 +12,15 @@ keywords: Accessibility, Chewy, Chewy Web Conference, Talk, Manual Testing
 
 # Manual Accessibility Testing
 
-Chewy Web Conference
+Global Accessibility Awareness Day
 
-May 8th, 2024
+May 15th, 2025
 
 ---
+
+<!-- footer: <p>Global Accessibility Awareness Day May 15th 2025</p> -->
+
+
 <style scoped>h1 { font-size: 3em; text-align: center; }</style>
 
 # a11y is everyone's r12y
@@ -199,5 +203,5 @@ accname.getAccessibleName(document.activeElement);
 
 # Q&A
 
-* Immediately following this session, in the same room, will be Intro to Screen Reader Testing on Mac
-* Come back at 12:15 PT / 3:15 ET for Intro to Screen Reader Testing on Windows
+* Immediately following this session, join us for a fireside chat with Jennison Asuncion, co-founder of GAAD
+* Come back at 12 PT / 3 ET for Intro to WAI-ARIA

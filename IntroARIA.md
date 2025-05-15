@@ -12,9 +12,9 @@ keywords: Accessibility, Chewy, Chewy Web Conference, Talk, WAI, ARIA
 
 # Intro to WAI-ARIA
 
-Chewy Web Conference
+Global Accessibility Awareness Day
 
-May 7th, 2024
+May 15th, 2025
 
 ---
 
@@ -267,8 +267,4 @@ Invalid `aria` can have dire consequences for the user so it's critical to ensur
 
 # Q & A
 
-Come see more Accessibility Presentations at Chewy Web Conference:
-
-- Tommorow 9:30/12:30 - Manual Accessibility Testing
-- Tommorow 10:15/1:15 - Screen Reader Testing (Mac Edition) LT
-- Tommorow 12:15/3:15 - Screen Reader Testing (Windows Edition) LT
+* Immediately following this session, join us for a Screen Reader Demo!
