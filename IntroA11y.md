@@ -39,7 +39,7 @@ May 15th, 2025
 ![bg right:33%](introA11y/timbl.png)
 
 - Designing and Engineering for Everyone
-- “The power of the web is in its universality...” – Tim Berners-Lee
+- “The power of the web is in its universality. Access by everyone regardless of disability is an essential aspect.” – Tim Berners-Lee
 
 ---
 
