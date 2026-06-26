@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Accessibility architecture diagram</title>
+  <desc id="diagram-desc">Application layers expose structure through the DOM and Accessibility API. Consumers and tools exchange semantic information bidirectionally with both layers.</desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#1A1A1A" flood-opacity="0.10"/>
+    </filter>
+
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 1 1 L 11 6 L 1 11 Z" fill="#1C49C2"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 1 1 L 11 6 L 1 11 Z" fill="#F25F3A"/>
+    </marker>
+    <marker id="arrow-muted" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 1 1 L 11 6 L 1 11 Z" fill="#5F6B7A"/>
+    </marker>
+
+    <style>
+      :root {
+        --primary: #1c49c2;
+        --primary-dark: #0f2f85;
+        --accent: #f25f3a;
+        --surface: #ffffff;
+        --surface-soft: #f6f8fc;
+        --surface-muted: #eef3fb;
+        --border: #d6deed;
+        --border-strong: #9aa9c2;
+        --text: #1a1a1a;
+        --text-secondary: #1a1a1a;
+      }
+
+      text {
+        font-family: Gordita, Arial, Helvetica, sans-serif;
+        letter-spacing: 0;
+      }
+
+      .title {
+        fill: #1A1A1A;
+        font-size: 44px;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        fill: #5F6B7A;
+        font-size: 22px;
+        font-weight: 400;
+      }
+
+      .section-label {
+        fill: #1a1a1a;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .layer-title,
+      .tool-title {
+        fill: #1A1A1A;
+        font-size: 27px;
+        font-weight: 700;
+      }
+
+      .layer-subtitle,
+      .tool-subtitle,
+      .legend-text {
+        fill: #1a1a1a;
+        font-size: 19px;
+        font-weight: 400;
+      }
+
+      .app-title,
+      .app-subtitle {
+        fill: #ffffff;
+      }
+
+      .app-title {
+        font-size: 29px;
+        font-weight: 700;
+      }
+
+      .app-subtitle {
+        font-size: 17px;
+        font-weight: 400;
+        opacity: 0.92;
+      }
+
+      .layer-card,
+      .tool-card,
+      .callout-card {
+        filter: url(#soft-shadow);
+      }
+
+      .layer-link {
+        stroke: #5F6B7A;
+        stroke-width: 4;
+        stroke-linecap: round;
+        fill: none;
+        marker-start: url(#arrow-muted);
+        marker-end: url(#arrow-muted);
+      }
+
+      .dom-link {
+        stroke: #1C49C2;
+        stroke-width: 3;
+        stroke-linecap: round;
+        fill: none;
+        opacity: 0.62;
+        marker-start: url(#arrow-blue);
+        marker-end: url(#arrow-blue);
+      }
+
+      .api-link {
+        stroke: #F25F3A;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 8 9;
+        fill: none;
+        opacity: 0.70;
+        marker-start: url(#arrow-orange);
+        marker-end: url(#arrow-orange);
+      }
+
+      .icon-line {
+        fill: none;
+        stroke: #1C49C2;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .icon-accent {
+        fill: none;
+        stroke: #F25F3A;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(0 -68)">
+    <g id="decorative-background" aria-hidden="true">
+      <rect width="1600" height="1000" fill="#F6F8FC"/>
+      <rect x="42" y="38" width="1516" height="924" rx="28" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Accessible content in logical reading order -->
+    <g id="accessible-content">
+      <text id="application-layers-label" x="124" y="188" class="section-label">Application Layers</text>
+
+      <g id="web-application" class="layer-card" role="group" aria-labelledby="web-application-name" aria-describedby="web-application-desc">
+        <desc id="web-application-desc">Where end users interact. Updates flow into the DOM, which exposes structure, state, and semantics to the Accessibility API and consumers.</desc>
+        <rect x="110" y="215" width="430" height="120" rx="16" fill="#EEF3FB" stroke="#D6DEED" stroke-width="2" aria-hidden="true"/>
+        <text id="web-application-name" x="150" y="270" class="layer-title">Web Application/NMA</text>
+        <text x="150" y="302" class="layer-subtitle" aria-hidden="true">Where end users interact</text>
+        <g transform="translate(490 252)" aria-hidden="true">
+          <rect x="-4" y="0" width="34" height="52" rx="5" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3"/>
+          <rect x="-44" y="25" width="33" height="27" rx="4" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3"/>
+          <line x1="-36" y1="27" x2="-19" y2="27" stroke="#1C49C2" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="13" cy="44" r="2.5" fill="#F25F3A"/>
+        </g>
+      </g>
+
+      <g id="sighted-users-callout" class="callout-card" role="group" aria-labelledby="sighted-users-callout-name" aria-describedby="sighted-users-callout-desc">
+        <desc id="sighted-users-callout-desc">Only sighted, mouse users interact directly with the web application. Assistive technologies, testing tools, automation, and AI agents instead consume semantics from the DOM and Accessibility API.</desc>
+        <rect x="615" y="218" width="308" height="96" rx="16" fill="#FFFFFF" stroke="#D6DEED" aria-hidden="true"/>
+        <text id="sighted-users-callout-name" class="layer-subtitle">
+          <tspan x="646" y="248">Only sighted, mouse users,</tspan>
+          <tspan x="646" dy="24">interact directly with</tspan>
+          <tspan x="646" dy="24">the application.</tspan>
+        </text>
+      </g>
+
+      <g id="dom-layer" class="layer-card" role="group" aria-labelledby="dom-layer-name" aria-describedby="dom-layer-desc">
+        <desc id="dom-layer-desc">Structure, state, and semantics. Consumers and tools exchange semantic information bidirectionally with the DOM and with the Accessibility API.</desc>
+        <rect x="110" y="395" width="430" height="120" rx="16" fill="#FFFFFF" stroke="#1C49C2" stroke-width="2" aria-hidden="true"/>
+        <rect x="110" y="395" width="12" height="120" rx="6" fill="#1C49C2" aria-hidden="true"/>
+        <text id="dom-layer-name" x="150" y="450" class="layer-title">DOM/UIView/View</text>
+        <text x="150" y="482" class="layer-subtitle" aria-hidden="true">Structure, state, and semantics</text>
+        <g transform="translate(484 433)" aria-hidden="true">
+          <circle cx="-26" cy="10" r="8" fill="#EEF3FB" stroke="#1C49C2" stroke-width="3"/>
+          <circle cx="14" cy="-10" r="8" fill="#EEF3FB" stroke="#1C49C2" stroke-width="3"/>
+          <circle cx="14" cy="32" r="8" fill="#EEF3FB" stroke="#1C49C2" stroke-width="3"/>
+          <path d="M -18 10 H -2 C 7 10 7 -10 14 -10 M -2 10 C 7 10 7 32 14 32" class="icon-line"/>
+        </g>
+      </g>
+
+      <g id="accessibility-api" class="layer-card" role="group" aria-labelledby="accessibility-api-name" aria-describedby="accessibility-api-desc">
+        <desc id="accessibility-api-desc">Normalized accessible interface derived from the DOM. Consumers and tools exchange semantic information bidirectionally with the Accessibility API and with the DOM.</desc>
+        <rect x="110" y="575" width="430" height="120" rx="16" fill="#FFF6F2" stroke="#F25F3A" stroke-width="2" aria-hidden="true"/>
+        <rect x="110" y="575" width="12" height="120" rx="6" fill="#F25F3A" aria-hidden="true"/>
+        <text id="accessibility-api-name" x="150" y="630" class="layer-title">Accessibility API</text>
+        <text x="150" y="662" class="layer-subtitle" aria-hidden="true">Normalized accessible interface</text>
+        <g transform="translate(482 609)" aria-hidden="true">
+          <rect x="-30" y="0" width="58" height="46" rx="10" fill="#FFFFFF" stroke="#F25F3A" stroke-width="3"/>
+          <path d="M -16 16 H 14 M -16 30 H 5" class="icon-accent"/>
+          <circle cx="21" cy="16" r="4" fill="#F25F3A"/>
+        </g>
+      </g>
+
+      <g id="consumers-layer" class="layer-card" role="group" aria-labelledby="consumers-layer-name" aria-describedby="consumers-layer-desc">
+        <desc id="consumers-layer-desc">People, tools, and agents that consume semantic information from the DOM and Accessibility API.</desc>
+        <rect x="110" y="755" width="430" height="120" rx="16" fill="#EEF3FB" stroke="#D6DEED" stroke-width="2" aria-hidden="true"/>
+        <text id="consumers-layer-name" x="150" y="810" class="layer-title">Consumers</text>
+        <text x="150" y="842" class="layer-subtitle" aria-hidden="true">People, tools, and agents</text>
+        <g transform="translate(454 790)" aria-hidden="true">
+          <circle cx="-18" cy="18" r="13" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3"/>
+          <path d="M -42 55 C -38 36 -1 36 4 55" class="icon-line"/>
+          <circle cx="28" cy="22" r="11" fill="#FFFFFF" stroke="#F25F3A" stroke-width="3"/>
+          <path d="M 8 55 C 12 40 42 40 48 55" class="icon-accent"/>
+        </g>
+      </g>
+
+      <text id="consumers-tools-label" x="1166" y="188" class="section-label">Consumers and Tools</text>
+
+      <g id="screen-readers" class="tool-card" role="group" aria-labelledby="screen-readers-name" aria-describedby="screen-readers-desc">
+        <desc id="screen-readers-desc">Exchanges semantic information bidirectionally with the DOM and Accessibility API.</desc>
+        <rect x="1160" y="215" width="340" height="86" rx="16" fill="#FFFFFF" stroke="#D6DEED" aria-hidden="true"/>
+        <g aria-hidden="true">
+          <circle cx="1210" cy="258" r="26" fill="#EEF3FB"/>
+          <rect x="1187" y="241" width="36" height="27" rx="5" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3"/>
+          <path d="M 1187 250 H 1223 M 1195 258 H 1208" class="icon-line" style="stroke-width: 3;"/>
+          <path d="M 1210 267 H 1205 L 1200 272 V 263 L 1205 267 H 1210 Z" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M 1216 263 C 1219 266 1219 273 1216 276 M 1222 259 C 1228 264 1228 275 1222 280" class="icon-accent" style="stroke-width: 3;"/>
+        </g>
+        <text id="screen-readers-name" x="1250" y="267" class="tool-title">Screen Readers</text>
+      </g>
+
+      <g id="voice-control" class="tool-card" role="group" aria-labelledby="voice-control-name" aria-describedby="voice-control-desc">
+        <desc id="voice-control-desc">Exchanges semantic information bidirectionally with the DOM and Accessibility API.</desc>
+        <rect x="1160" y="375" width="340" height="86" rx="16" fill="#FFFFFF" stroke="#D6DEED" aria-hidden="true"/>
+        <g aria-hidden="true">
+          <circle cx="1210" cy="418" r="26" fill="#EEF3FB"/>
+          <rect x="1202" y="395" width="16" height="31" rx="8" fill="#FFFFFF" stroke="#1C49C2" stroke-width="4"/>
+          <path d="M 1193 418 C 1193 429 1200 436 1210 436 C 1220 436 1227 429 1227 418 M 1210 436 V 446 M 1200 446 H 1220" class="icon-line"/>
+        </g>
+        <text id="voice-control-name" x="1250" y="427" class="tool-title">Voice Control</text>
+      </g>
+
+      <g id="testing-tools" class="tool-card" role="group" aria-labelledby="testing-tools-name" aria-describedby="testing-tools-desc">
+        <desc id="testing-tools-desc">Exchanges semantic information bidirectionally with the DOM and Accessibility API.</desc>
+        <rect x="1160" y="535" width="340" height="86" rx="16" fill="#FFFFFF" stroke="#D6DEED" aria-hidden="true"/>
+        <g aria-hidden="true">
+          <circle cx="1210" cy="578" r="26" fill="#EEF3FB"/>
+          <path d="M 1200 565 L 1189 578 L 1200 591" class="icon-line"/>
+          <path d="M 1220 565 L 1231 578 L 1220 591" class="icon-line"/>
+          <path d="M 1202 578 L 1208 585 L 1220 570" class="icon-accent"/>
+        </g>
+        <text id="testing-tools-name" x="1250" y="587" class="tool-title">Testing Tools</text>
+      </g>
+
+      <g id="automation" class="tool-card" role="group" aria-labelledby="automation-name" aria-describedby="automation-desc">
+        <desc id="automation-desc">Exchanges semantic information bidirectionally with the DOM and Accessibility API.</desc>
+        <rect x="1160" y="695" width="340" height="86" rx="16" fill="#FFFFFF" stroke="#D6DEED" aria-hidden="true"/>
+        <g aria-hidden="true">
+          <circle cx="1210" cy="738" r="26" fill="#EEF3FB"/>
+          <rect x="1187" y="721" width="36" height="27" rx="5" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3"/>
+          <path d="M 1187 730 H 1223 M 1195 739 H 1207" class="icon-line" style="stroke-width: 3;"/>
+          <path d="M 1210 735 L 1228 752 L 1218 754 L 1214 765 L 1208 735 Z" fill="#FFFFFF" stroke="#1C49C2" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M 1197 713 C 1204 710 1212 711 1218 716 M 1193 721 C 1198 719 1204 719 1209 722" class="icon-accent" style="stroke-width: 3;"/>
+        </g>
+        <text id="automation-name" x="1250" y="747" class="tool-title">Automation</text>
+      </g>
+
+      <g id="ai-agents" class="tool-card" role="group" aria-labelledby="ai-agents-name" aria-describedby="ai-agents-desc">
+        <desc id="ai-agents-desc">Exchanges semantic information bidirectionally with the DOM and Accessibility API.</desc>
+        <rect x="1160" y="855" width="340" height="86" rx="16" fill="#FFFFFF" stroke="#D6DEED" aria-hidden="true"/>
+        <g aria-hidden="true">
+          <circle cx="1210" cy="898" r="26" fill="#EEF3FB"/>
+          <circle cx="1198" cy="896" r="6" fill="#FFFFFF" stroke="#1C49C2" stroke-width="4"/>
+          <circle cx="1222" cy="884" r="5" fill="#FFFFFF" stroke="#F25F3A" stroke-width="4"/>
+          <circle cx="1224" cy="911" r="5" fill="#FFFFFF" stroke="#1C49C2" stroke-width="4"/>
+          <path d="M 1204 894 L 1217 887 M 1204 899 L 1219 909" class="icon-line"/>
+        </g>
+        <text id="ai-agents-name" x="1250" y="907" class="tool-title">AI Agents</text>
+      </g>
+    </g>
+
+    <!-- Decorative connection arrows (hidden from assistive technologies) -->
+    <g id="decorative-connections" aria-hidden="true">
+      <path class="layer-link" d="M 325 352 L 325 376"/>
+      <path class="layer-link" d="M 325 532 L 325 556"/>
+      <path class="layer-link" d="M 325 712 L 325 736"/>
+
+      <path d="M 540 275 C 570 275 585 266 615 266" stroke="#5F6B7A" stroke-width="3.5" stroke-linecap="round" fill="none" marker-start="url(#arrow-muted)" marker-end="url(#arrow-muted)"/>
+
+      <path class="dom-link" d="M 540 426 C 725 426 900 258 1160 258"/>
+      <path class="dom-link" d="M 540 441 C 725 441 910 418 1160 418"/>
+      <path class="dom-link" d="M 540 456 C 735 456 910 578 1160 578"/>
+      <path class="dom-link" d="M 540 471 C 745 471 910 738 1160 738"/>
+      <path class="dom-link" d="M 540 486 C 755 486 900 898 1160 898"/>
+
+      <path class="api-link" d="M 540 606 C 745 606 900 258 1160 258"/>
+      <path class="api-link" d="M 540 621 C 745 621 910 418 1160 418"/>
+      <path class="api-link" d="M 540 636 C 735 636 910 578 1160 578"/>
+      <path class="api-link" d="M 540 651 C 725 651 910 738 1160 738"/>
+      <path class="api-link" d="M 540 666 C 715 666 900 898 1160 898"/>
+    </g>
+  </g>
+</svg>
