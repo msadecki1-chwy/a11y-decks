@@ -136,20 +136,23 @@ Semantic and expressive HTML are not just accessibility concepts. They're busine
 
 ---
 
-<!-- _class: compact-table -->
+<!-- _class: image-slide -->
 
 # Accessibility as a Platform Capability
 
-## Should application developers reinvent or inherit accessibility?
+![](platformA11y/accessibility-platform-inheritance.svg)
 
-| Instead of reinventing | Platform should provide |
-| --------------------------------- | ----------------------- |
-| Alt text storage                  | Image metadata with support for context |
-| Accessible labels                 | Expressive content models          |
-| Custom accessibility checks       | Shared testing          |
-| Manual audits by SMEs               | CI/CD quality gates     |
-| Individual spreadsheets           | Observability           |
-| Team-specific solutions           | AI-ready semantics      |
+<section class="sr-only">
+  <h2>Should application developers reinvent or inherit accessibility?</h2>
+  <p>A platform stack starts with accessibility metadata: meaning, purpose, state, and relationships. Testing, CI/CD, observability, and AI context consume that semantic foundation.</p>
+  <ul>
+    <li><strong>Testing:</strong> Shared checks target roles, names, and states.</li>
+    <li><strong>CI/CD:</strong> Quality gates run before release.</li>
+    <li><strong>Observability:</strong> Semantic health is measured over time.</li>
+    <li><strong>AI context:</strong> Agents get reliable UI meaning.</li>
+    <li><strong>Team A, Team B, and Team C:</strong> All inherit accessibility from the platform.</li>
+  </ul>
+</section>
 
 <!-- So here is my big pitch. Accessibility at Chewy has been a grassroots, bottom up initiative that has struggled to scale with the pace of growth. Organizations don't scale accessibility by hiring more accessibility engineers. They scale accessibility by building accessible platforms. The accessibility team is currently developing tooling the help with this, and we will be asking each team to implement this tooling very soon, but we're also hoping that all of the people in this room start thinking about accessibilty during any architectural or platform discussion. I often run into custom and complicated features developed for the sole purpose of SEO, test automation, telemetry, analytics, etc.  That same data was already there, or should have been there, for accessibility, then just consumed for those other purposes.
 

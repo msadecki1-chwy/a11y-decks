@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Accessibility platform inheritance diagram</title>
+  <desc id="diagram-desc">A shared platform stack starts with accessibility metadata: meaning, purpose, state, and relationships. Testing, CI/CD, observability, and AI context consume that semantic foundation. Team A, Team B, and Team C inherit accessibility from the platform.</desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1A1A1A" flood-opacity="0.11"/>
+    </filter>
+
+    <marker id="arrow-primary" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 1 1 L 13 7 L 1 13 Z" fill="#1C49C2"/>
+    </marker>
+
+    <style>
+      text {
+        font-family: Gordita, Arial, Helvetica, sans-serif;
+        letter-spacing: 0;
+      }
+
+      .platform-label {
+        fill: #1C49C2;
+        font-size: 31px;
+        font-weight: 700;
+      }
+
+      .metadata-title {
+        fill: #FFFFFF;
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .metadata-copy {
+        fill: #FFFFFF;
+        font-size: 22px;
+        font-weight: 400;
+        opacity: 0.94;
+      }
+
+      .layer-title {
+        fill: #1A1A1A;
+        font-size: 29px;
+        font-weight: 700;
+      }
+
+      .layer-copy,
+      .team-copy {
+        fill: #5F6B7A;
+        font-size: 19px;
+        font-weight: 400;
+      }
+
+      .team-title {
+        fill: #1A1A1A;
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .contract-label {
+        fill: #1C49C2;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .inheritance-label {
+        fill: #1A1A1A;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      .connector {
+        fill: none;
+        stroke: #1C49C2;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .icon-line {
+        fill: none;
+        stroke: #1C49C2;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .icon-line-accent {
+        fill: none;
+        stroke: #F25F3A;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .divider {
+        stroke: #D6DEED;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#F6F8FC"/>
+  <rect x="44" y="36" width="1512" height="828" rx="28" fill="#FFFFFF"/>
+
+  <g aria-hidden="true">
+    <rect x="660" y="62" width="280" height="58" rx="29" fill="#EEF3FB" stroke="#D6DEED" stroke-width="2"/>
+    <text x="800" y="101" class="platform-label" text-anchor="middle">Platform</text>
+  </g>
+
+  <g id="platform-stack">
+    <rect x="400" y="145" width="800" height="450" rx="22" fill="#FFFFFF" stroke="#D6DEED" stroke-width="2" filter="url(#soft-shadow)"/>
+
+    <path d="M 422 145 H 1178 C 1190 145 1200 155 1200 167 V 273 H 400 V 167 C 400 155 410 145 422 145 Z" fill="#1C49C2"/>
+    <rect x="400" y="215" width="800" height="58" fill="#1C49C2"/>
+
+    <line x1="400" y1="273" x2="1200" y2="273" class="divider"/>
+    <line x1="400" y1="353" x2="1200" y2="353" class="divider"/>
+    <line x1="400" y1="433" x2="1200" y2="433" class="divider"/>
+    <line x1="400" y1="513" x2="1200" y2="513" class="divider"/>
+
+    <g transform="translate(458 181)" aria-hidden="true">
+      <circle cx="0" cy="24" r="34" fill="#FFFFFF" opacity="0.16"/>
+      <circle cx="-13" cy="18" r="7" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+      <circle cx="17" cy="4" r="7" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+      <circle cx="17" cy="44" r="7" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+      <path d="M -6 18 H 4 C 11 18 11 4 17 4 M 4 18 C 11 18 11 44 17 44" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <text x="525" y="198" class="metadata-title">Accessibility metadata</text>
+    <text x="525" y="235" class="metadata-copy">Meaning | purpose | state | relationships</text>
+
+    <g transform="translate(458 292)" aria-hidden="true">
+      <circle cx="0" cy="20" r="28" fill="#EEF3FB"/>
+      <path d="M -14 21 L -4 31 L 18 8" class="icon-line-accent"/>
+      <rect x="-21" y="-5" width="42" height="50" rx="7" fill="none" stroke="#1C49C2" stroke-width="4"/>
+    </g>
+    <text x="525" y="310" class="layer-title">Testing</text>
+    <text x="525" y="337" class="layer-copy">Shared checks target roles, names, and states</text>
+
+    <g transform="translate(458 372)" aria-hidden="true">
+      <circle cx="0" cy="20" r="28" fill="#EEF3FB"/>
+      <rect x="-24" y="4" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#1C49C2" stroke-width="4"/>
+      <rect x="-2" y="26" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#1C49C2" stroke-width="4"/>
+      <rect x="16" y="4" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#F25F3A" stroke-width="4"/>
+      <path d="M -6 13 H 16 M 7 22 V 26" class="icon-line"/>
+    </g>
+    <text x="525" y="390" class="layer-title">CI/CD</text>
+    <text x="525" y="417" class="layer-copy">Quality gates run before release</text>
+
+    <g transform="translate(458 452)" aria-hidden="true">
+      <circle cx="0" cy="20" r="28" fill="#EEF3FB"/>
+      <path d="M -23 32 H 23" class="icon-line"/>
+      <path d="M -18 26 L -8 18 L 0 24 L 10 8 L 22 15" class="icon-line-accent"/>
+      <circle cx="10" cy="8" r="4" fill="#F25F3A"/>
+    </g>
+    <text x="525" y="470" class="layer-title">Observability</text>
+    <text x="525" y="497" class="layer-copy">Semantic health is measured over time</text>
+
+    <g transform="translate(458 532)" aria-hidden="true">
+      <circle cx="0" cy="20" r="28" fill="#EEF3FB"/>
+      <path d="M 0 -1 L 5 12 L 18 17 L 5 22 L 0 35 L -5 22 L -18 17 L -5 12 Z" fill="#FFFFFF" stroke="#1C49C2" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 22 3 L 25 10 L 32 13 L 25 16 L 22 23 L 19 16 L 12 13 L 19 10 Z" fill="#FFFFFF" stroke="#F25F3A" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+    <text x="525" y="550" class="layer-title">AI context</text>
+    <text x="525" y="577" class="layer-copy">Agents get reliable UI meaning</text>
+  </g>
+
+  <g id="inheritance-flow">
+    <path d="M 800 595 V 638" class="connector"/>
+    <rect x="595" y="622" width="410" height="58" rx="29" fill="#EEF3FB" stroke="#D6DEED" stroke-width="2"/>
+    <text x="800" y="660" class="contract-label" text-anchor="middle">Shared semantic contract</text>
+
+    <path d="M 800 680 V 704" class="connector"/>
+    <path d="M 420 704 H 1180" class="connector"/>
+    <path d="M 420 704 V 717" class="connector" marker-end="url(#arrow-primary)"/>
+    <path d="M 800 704 V 717" class="connector" marker-end="url(#arrow-primary)"/>
+    <path d="M 1180 704 V 717" class="connector" marker-end="url(#arrow-primary)"/>
+  </g>
+
+  <g id="team-a" role="group" aria-label="Team A inherits accessibility">
+    <rect x="270" y="720" width="300" height="92" rx="18" fill="#FFFFFF" stroke="#D6DEED" stroke-width="2" filter="url(#soft-shadow)"/>
+    <circle cx="316" cy="766" r="24" fill="#FFF6F2" aria-hidden="true"/>
+    <path d="M 304 766 L 314 776 L 332 756" class="icon-line-accent" aria-hidden="true"/>
+    <text x="360" y="760" class="team-title">Team A</text>
+    <text x="360" y="789" class="team-copy">Inherits accessibility</text>
+  </g>
+
+  <g id="team-b" role="group" aria-label="Team B inherits accessibility">
+    <rect x="650" y="720" width="300" height="92" rx="18" fill="#FFFFFF" stroke="#D6DEED" stroke-width="2" filter="url(#soft-shadow)"/>
+    <circle cx="696" cy="766" r="24" fill="#FFF6F2" aria-hidden="true"/>
+    <path d="M 684 766 L 694 776 L 712 756" class="icon-line-accent" aria-hidden="true"/>
+    <text x="740" y="760" class="team-title">Team B</text>
+    <text x="740" y="789" class="team-copy">Inherits accessibility</text>
+  </g>
+
+  <g id="team-c" role="group" aria-label="Team C inherits accessibility">
+    <rect x="1030" y="720" width="300" height="92" rx="18" fill="#FFFFFF" stroke="#D6DEED" stroke-width="2" filter="url(#soft-shadow)"/>
+    <circle cx="1076" cy="766" r="24" fill="#FFF6F2" aria-hidden="true"/>
+    <path d="M 1064 766 L 1074 776 L 1092 756" class="icon-line-accent" aria-hidden="true"/>
+    <text x="1120" y="760" class="team-title">Team C</text>
+    <text x="1120" y="789" class="team-copy">Inherits accessibility</text>
+  </g>
+</svg>
